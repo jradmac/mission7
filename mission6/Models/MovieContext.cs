@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using mission6.Models;
 
+namespace mission6.Models;
 
 public class MovieContext : DbContext
 {
@@ -9,6 +9,7 @@ public class MovieContext : DbContext
     {
         
     }
-    public DbSet<MovieForm> MovieForm { get; set; }
+    public DbSet<MovieForm> Movies { get; set; }
+    public DbSet<Category> Categories { get; set; }
     
 }

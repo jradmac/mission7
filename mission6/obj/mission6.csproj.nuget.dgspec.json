@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jared/Documents/IS_413/mission6/mission6/mission6.csproj": {}
+    "/Users/jared/RiderProjects/7mission/mission6/mission6.csproj": {}
   },
   "projects": {
-    "/Users/jared/Documents/IS_413/mission6/mission6/mission6.csproj": {
+    "/Users/jared/RiderProjects/7mission/mission6/mission6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jared/Documents/IS_413/mission6/mission6/mission6.csproj",
+        "projectUniqueName": "/Users/jared/RiderProjects/7mission/mission6/mission6.csproj",
         "projectName": "mission6",
-        "projectPath": "/Users/jared/Documents/IS_413/mission6/mission6/mission6.csproj",
+        "projectPath": "/Users/jared/RiderProjects/7mission/mission6/mission6.csproj",
         "packagesPath": "/Users/jared/.nuget/packages/",
-        "outputPath": "/Users/jared/Documents/IS_413/mission6/mission6/obj/",
+        "outputPath": "/Users/jared/RiderProjects/7mission/mission6/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jared/.nuget/NuGet/NuGet.Config"

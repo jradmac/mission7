@@ -1,0 +1,55 @@
+@model Microsoft.EntityFrameworkCore.DbSet<MovieForm>
+
+
+
+<!DOCTYPE html>
+
+<head>
+    <title>WaitList</title>
+</head>
+<body>
+
+<table class="table table-bordered">
+    <thead class="fw-bold">
+    <tr>
+        <td>Category</td>
+        <td>Title</td>
+        <td>Year</td>
+        <td>Director</td>
+        <td>Rating</td>
+        <td>Edited</td>
+        <td>Lent To</td>
+        <td>Copied to Plex</td>
+        <td>Notes</td>
+        <td>Actions</td>
+    </tr>
+    </thead>
+
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Category?.CategoryName</td>
+            <td>@item.Title</td>
+            <td>@item.Year</td>
+            <td>@(string.IsNullOrEmpty(item.Director) ? "Unknown" : item.Director)</td>
+            <td>@(string.IsNullOrEmpty(item.Rating) ? "Not Rated" : item.Rating)</td>
+            <td>@(item.Edited ? "Yes" : "No")</td>
+            <td>@(item.LentTo ?? "N/A")</td>
+            <td>@(item.CopiedToPlex ? "Yes" : "No")</td>
+            <td>@(item.Notes ?? "No notes available")</td>
+
+            
+            <td><a class="btn btn-info" asp-controller="Home" asp-action="Edit" asp-route-id = "@item.MovieId" >Edit</a>
+            <form method="post" asp-action="DeleteConfirmed" asp-controller="Home" asp-route-id="@item.MovieId" onsubmit="return confirm('Are you sure you want to delete this movie?');">
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+            </td>
+
+            
+        </tr>
+    }
+    </tbody>
+</table>
+
+</body>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5vXVJ5SFM9E=",
+  "dgSpecHash": "C4NP2KF7hSo=",
   "success": true,
-  "projectFilePath": "/Users/jared/Documents/IS_413/mission6/mission6/mission6.csproj",
+  "projectFilePath": "/Users/jared/RiderProjects/7mission/mission6/mission6.csproj",
   "expectedPackageFiles": [
     "/Users/jared/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/jared/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
